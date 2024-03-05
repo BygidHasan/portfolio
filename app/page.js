@@ -1,20 +1,17 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import Contact from "./components/Contact";
+import Image from "next/image";
+import { useState } from "react";
 
-import { VscGithub } from "react-icons/vsc";
-import { RxLinkedinLogo } from "react-icons/rx";
-import { SiLeetcode, SiCodeforces, SiCodechef } from "react-icons/si";
-import { FaHackerrank } from "react-icons/fa";
-import { BiLogoFacebookCircle, BiLogoUpwork } from "react-icons/bi";
-
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
-
-import { TbBrandNextjs, TbBrandNodejs, TbBrandRedux } from "react-icons/tb";
-import { RiJavascriptFill, RiReactjsLine } from "react-icons/ri";
 import { FaJava } from "react-icons/fa6";
+import { VscGithub } from "react-icons/vsc";
+import { FaHackerrank } from "react-icons/fa";
+import { RxLinkedinLogo } from "react-icons/rx";
+import { RiJavascriptFill, RiReactjsLine } from "react-icons/ri";
+import { BiLogoFacebookCircle, BiLogoUpwork } from "react-icons/bi";
+import { SiLeetcode, SiCodeforces, SiCodechef } from "react-icons/si";
+import { TbBrandNextjs, TbBrandNodejs, TbBrandRedux } from "react-icons/tb";
 import {
   SiTailwindcss,
   SiMysql,
@@ -213,7 +210,7 @@ export default function Home() {
 
   return (
     <main className="h-screen flex flex-col md:flex-row gap-10 bg-gray-950 p-5 text-white overflow-auto md:overflow-hidden">
-      <section className="flex flex-col gap-5 2xl:gap-20 justify-between 2xl:justify-center items-center w-full md:w-2/6 lg:w-1/4 border border-gray-700 rounded-md p-5 ">
+      <section className="flex flex-col gap-5 md:gap-14 justify-between md:justify-center items-center w-full md:w-2/6 lg:w-1/4 border border-gray-700 rounded-md p-5 ">
         {/* image here */}
         <Image
           className="rounded-full border border-gray-700 p-3"
@@ -251,12 +248,13 @@ export default function Home() {
 
           {/* Contact */}
         </div>
-
-        <Contact />
+        <p className="text-right font-light text-sm italic text-gray-400">
+          Contact Me Through my Social Media
+        </p>
       </section>
 
       {/* description section */}
-      <section className="flex flex-col w-full md:w-4/6 lg:w-3/4 gap-5 md:overflow-auto">
+      <section className="flex flex-col w-full md:w-4/6 lg:w-3/4 gap-5 md:pr-5 md:overflow-auto">
         {/* skills */}
         <div className="flex flex-col w-full border border-gray-700 rounded-lg px-5 py-3 ">
           <p className="text-lg md:text-xl lg:text-2xl font-medium">Skills</p>

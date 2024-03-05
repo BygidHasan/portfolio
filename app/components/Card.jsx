@@ -34,7 +34,7 @@ export default function Card({ data }) {
             href={liveLink}
             target="_blank"
           >
-            Open
+            Preview
           </Link>
         )}
         {codeLink && (
