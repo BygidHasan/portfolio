@@ -156,7 +156,7 @@ export default function Home() {
       ],
       exp: { duration: "1 Jan - present", location: "Remote" },
       description: "Worked as a Front-End Engineer",
-      liveLink: "https://enhanced-todo.vercel.app/",
+      liveLink: "https://peterspte.com/",
       codeLink: null,
     },
   ];
